@@ -1,0 +1,29 @@
+.repoContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.cardContainer {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 70%;
+    gap: 32px;
+    margin: 50px auto;
+    height: 100%;
+}
+
+.repoCard {
+    background-color: #f5a6a6;
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 200 px;
+    height: 200px;
+    
+}

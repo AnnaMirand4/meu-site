@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import Contato from './pages/Contato'
 import Portfolioo from './pages/Portfolio'
+import Footer from './components/Footer'
 
 
 const Router = () => {
@@ -16,6 +17,7 @@ const Router = () => {
             <Route path='/portfolio' element= {<Portfolioo />} />
             <Route path='/contato' element= {<Contato />} />
         </Routes>
+        <Footer content="Feito com ♡ por Anna Miranda" />
     </BrowserRouter>
     )
 }

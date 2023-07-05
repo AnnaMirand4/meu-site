@@ -1,10 +1,10 @@
 import Header from "../components/Header"
 
-import contato from '../assets/contato.svg'
+import contato from '../assets/contato.png'
 
 import styles from '../styles/pages/contato.module.css'
 import { useState } from "react"
-import Footer from "../components/Footer"
+
 
 const Contato = () => {
   const [nome, setNome] = useState('')
@@ -57,7 +57,7 @@ const Contato = () => {
           </button>
         </form>
       </main>
-      <Footer/>
+      
     </>
   )
 }

@@ -1,10 +1,8 @@
 import Header from "../components/Header"
+import home from '../assets/home.png'
+import { Alien, BracketsCurly, AddressBook } from "phosphor-react"
+import styles from '../styles/pages/home.module.css'
 
-import home from '../assets/home.svg'
-import Footer from "../components/Footer"
-
-import { Alien } from "phosphor-react"
-import Text from "../components/Text"
 
 const Home = () => {
   return (
@@ -13,12 +11,25 @@ const Home = () => {
         title="Site da ANNA" 
         image={home} 
       />
-      <h1>HOME</h1>
-      <div>
-      <Alien size={150} color="#686AAC" weight="thin" />
-      <Text content= "ashuahsiahs suhauhsuahs uhsuahsu ahua ush uahsuah uahsuah uhsua " />
+      
+      <div className={styles.homeContainer}>
+        <div className={styles.cardContainer}>
+          <Alien size={150} color="#686AAC" weight="thin"/>
+          <h2 className={styles.cardTitle}>Vida</h2>
+          <p className={styles.cardDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div className={styles.cardContainer}>
+          <BracketsCurly size={150} color="#686AAC" weight="thin"/>
+          <h2 className={styles.cardTitle}>Código</h2>
+          <p className={styles.cardDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div className={styles.cardContainer}>
+          <AddressBook size={150} color="#686AAC" weight="thin"/>
+          <h2 className={styles.cardTitle}>Contatinho</h2>
+          <p className={styles.cardDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
       </div>
-      <Footer />
+      
     </>
   )
 }

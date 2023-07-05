@@ -1,0 +1,23 @@
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 10rem;
+  }
+  
+  .cardContainer {
+    text-align: center;
+  }
+  
+  .cardTitle {
+    padding: 1rem;
+    font-size: 2rem;
+    color: #474a51
+  }
+  
+  .cardDescription {
+    font-size: 1rem;
+    color: #474a51
+  }
+  

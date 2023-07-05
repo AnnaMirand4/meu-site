@@ -1,8 +1,8 @@
 
 import Header from "../components/Header"
 
-import sobre from '../assets/sobre.svg'
-import Footer from "../components/Footer"
+import sobre from '../assets/sobre.png'
+
 
 const Sobre = () => {
   return (
@@ -11,7 +11,7 @@ const Sobre = () => {
         title="Descubra mais sobre mim" 
         image={sobre} 
       />
-      <Footer />
+      
     </>
   )
 }

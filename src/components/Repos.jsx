@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 import Subtitle from './Subtitle'
 import Text from './Text'
 import Title from './Title'
-
+import { TiArrowRightOutline } from 'react-icons/Ti'
+import style from '../styles/components/repos.module.css'
 
 const Repos = () => {
     const [Repos, setRepos] = useState([])
@@ -24,21 +25,27 @@ const Repos = () => {
     },[])
 
   return (
-    <div>
+    <div className={style.repoContainer}>
         <Title content= 'Meus repositórios no GitHub' />
+        
+    <div className= {style.cardContainer}>
+        
         {Repos.map (repo => {
             return(
-                <div className='cardContainer'>
-                 <div className="repoCard">
+                 <div key={repo.id} className={style.repoCard}>
                 <Subtitle content={repo.name} />
                 <Text content={repo.description} />
+                <a href={repo.html_url} target='blank'>
+                <TiArrowRightOutline />
+                </a>
         
                 </div>
-                </div>
+        
             )
         })
 
         }
+    </div>
     </div>
   )
 }
