@@ -2,6 +2,7 @@
 import Header from "../components/Header"
 
 import sobre from '../assets/sobre.png'
+import CardSobre from "../components/CardSobre"
 
 
 const Sobre = () => {
@@ -11,7 +12,7 @@ const Sobre = () => {
         title="Descubra mais sobre mim" 
         image={sobre} 
       />
-      
+      <CardSobre />
     </>
   )
 }

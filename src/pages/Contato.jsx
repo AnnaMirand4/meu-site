@@ -1,5 +1,9 @@
 import Header from "../components/Header"
 
+import database from '../Service/firebase'
+import { ref, push, set } from 'firebase/database'
+
+
 import contato from '../assets/contato.png'
 
 import styles from '../styles/pages/contato.module.css'
@@ -21,12 +25,29 @@ const Contato = () => {
 
   function handleInputMensagem(e) {
     setMensagem(e.target.value)
+    
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    
+    const messageListRef = ref(database, 'mensagens') // cria uma coleção no db do firebase
+    const newMessageRef = push(messageListRef) // cria nova mensagem e enviar para a nossa coleção "mensagens"
+    set(newMessageRef, {
+      nome: nome,
+      email: email,
+      texto: mensagem
+    })
+
+    setNome('')
+    setEmail('')
+    setMensagem('')
   }
 
   return (
     <>
       <Header 
-        title="Fale comigo" 
+        title="Me mande uma mensagem" 
         image={contato} 
       />
       <main>

@@ -1,0 +1,24 @@
+.sobreContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobreImage {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+.textSobre {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    text-align: justify;
+    padding-right: 5rem;
+    padding-left: 0;
+}

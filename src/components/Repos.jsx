@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Subtitle from './Subtitle'
 import Text from './Text'
 import Title from './Title'
-import { TiArrowRightOutline } from 'react-icons/Ti'
+import { RiGitRepositoryFill } from 'react-icons/Ri'
 import style from '../styles/components/repos.module.css'
 
 const Repos = () => {
@@ -35,9 +35,9 @@ const Repos = () => {
                  <div key={repo.id} className={style.repoCard}>
                 <Subtitle content={repo.name} />
                 <Text content={repo.description} />
-                <a href={repo.html_url} target='blank'>
-                <TiArrowRightOutline />
-                </a>
+                <div className={style.arrow}><a href={repo.html_url} target='blank'>
+                <RiGitRepositoryFill />
+                </a></div>
         
                 </div>
         
