@@ -1,6 +1,6 @@
 import Header from "../components/Header"
 
-import database from '../Service/firebase'
+import database from '../service/firebase'
 import { ref, push, set } from 'firebase/database'
 
 
@@ -31,8 +31,8 @@ const Contato = () => {
   function handleSubmit(e) {
     e.preventDefault()
     
-    const messageListRef = ref(database, 'mensagens') // cria uma coleção no db do firebase
-    const newMessageRef = push(messageListRef) // cria nova mensagem e enviar para a nossa coleção "mensagens"
+    const messageListRef = ref(database, 'mensagens') 
+    const newMessageRef = push(messageListRef) 
     set(newMessageRef, {
       nome: nome,
       email: email,
@@ -51,7 +51,7 @@ const Contato = () => {
         image={contato} 
       />
       <main>
-        <form className={styles.form} onSubmit={()=>{}}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <input 
             className={styles.formInput}
             type="text"
