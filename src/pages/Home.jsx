@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Header 
-        title="Site da ANNA" 
+        title="Site da ANNA!" 
         image={home} 
       />
       
