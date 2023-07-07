@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Subtitle from './Subtitle'
 import Text from './Text'
 import Title from './Title'
-import { RiGitRepositoryFill } from 'react-icons/Ri'
+import { RiGitRepositoryFill } from '/react-icons/Ri'
 import style from '../styles/components/repos.module.css'
 
 const Repos = () => {
