@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Subtitle from './Subtitle'
 import Text from './Text'
 import Title from './Title'
-import { RiGitRepositoryFill } from '/react-icons/Ri'
+import { ArrowBendDownRight } from "phosphor-react";
 import style from '../styles/components/repos.module.css'
 
 const Repos = () => {
@@ -36,7 +36,7 @@ const Repos = () => {
                 <Subtitle content={repo.name} />
                 <Text content={repo.description} />
                 <div className={style.arrow}><a href={repo.html_url} target='blank'>
-                <RiGitRepositoryFill />
+                <ArrowBendDownRight size={32} />
                 </a></div>
         
                 </div>

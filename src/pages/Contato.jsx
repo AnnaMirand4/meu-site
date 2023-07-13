@@ -1,6 +1,6 @@
 import Header from "../components/Header"
 
-import database from '../service/firebase'
+import database from '../Service/firebase'
 import { ref, push, set } from 'firebase/database'
 
 
