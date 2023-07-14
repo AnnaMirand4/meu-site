@@ -14,23 +14,12 @@ Este é um site criado com base numa atividade feita durante o curso de Front En
 
 ### Quem é a desenvolvedora?
 
-<img src='./assets/lilit.jpeg' width=500 alt='Selfie da Lilit com cabelos cacheados longos pretos, com o rosto rodeado por bolinhas predominantemente roxas'>
-
-[Lilit Bandeira](https://www.instagram.com/lilitravesti), é uma Artista baiana que ama tecnologia e estuda Front End com a{Reprograma};
 
 #### Contatos
 
 - [E-mail](annacarolinemm@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/lilitbandeira)
 - [GitHub](https://github.com/AnnaMirand4)
-
-### Quem são as monitoras?
-
-<img src='./assets/Ponyo.webp' width=500 alt='personagem princesa Ponyo do filme e mesmo nome do studio ghibli'>
-
-### Quem são as alunas?
-
-<img src='./assets/ghibligirls.jpeg' width=500 alt='7 personagens femininas do studio ghibli'>
 
 
 # Processos
